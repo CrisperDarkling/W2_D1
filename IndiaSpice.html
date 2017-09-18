@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>index.html </title>
+        <link href="https://fonts.googleapis.com/css?family=Neucha|Rochester|Tangerine" rel="stylesheet">
+            <!--font-family: 'Tangerine', cursive;-->
+            <!--font-family: 'Rochester', cursive;-->
+            <!--font-family: 'Neucha', cursive;-->
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <style type="text/css">
+        #title{
+            display:flex;
+			flex-direction:row;
+			justify-content:center;
+			width:50%;
+			height:65px;
+			padding-left:30px;
+			margin-left:470px;
+			background-color:#ffbb32;
+			font-family: 'Rochester', cursive;
+			font-size:3.5rem;
+			color:#c1272d;
+
+        }
+        nav{
+	        display:flex;
+			flex-direction:row;
+			justify-content:center;
+			width:50%;
+			height:120px;
+			padding-left:30px;
+			margin-left:470px;
+			background-color:#ffbb32;
+			border-bottom-left-radius:90px;
+			border-bottom-right-radius:90px;
+			font-family: 'Tangerine', cursive;
+			font-size:2.4rem;
+			
+			
+		}
+        
+        body{
+            background-image:url("images/background2.jpg");
+            background-size:stretch;
+        }   
+            
+        a{
+            flex:1;
+            margin-top:30px;
+            margin-left:80px;
+            color:#FF000A;
+        }
+        
+        #logo{
+            position: absolute;
+            top:0;
+            z-index:10;
+        }
+        
+        #box{
+            position:absolute;
+            top:280px;
+            right:480px;
+            background-color:black;
+            width:50%;
+            height:630px;
+            font-size:2.4rem;
+            color:white;
+            text-align:center;
+            border-top-left-radius:90px;
+            border-top-right-radius:90px;
+        }
+        #video{
+            z-index=100;
+            margin-top:180px;
+        }
+        h1{
+            margin-bottom:100px;
+            font-size:2.8rem;
+            font-family: 'Tangerine', cursive;
+        }
+        #side1{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            position:absolute;
+            top:0;
+            right:0;
+            background-color:black;
+            width:23%;
+            height:100%;
+        }
+        
+        #side2{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            position:absolute;
+            top:0;
+            left:0;
+            background-color:black;
+            width:23%;
+            height:100%;
+        }
+        .slides{
+            display:flex;
+            flex-direction;
+        }
+        #curry{
+            z-index:100;
+            width:27.6rem;
+            height:25rem;
+        }
+            
+        #spices{
+            z-index:100;
+            width:27.6rem;
+            height:25rem;
+        }
+        h2{
+            color:white;
+            font-size:1-8rem;
+            font-family:'Neucha', cursive;
+        }
+            
+        </style>
+    
+    </head>
+    
+    <body>
+		<section id="title"><h1>~Indian Spice~</h1></section>
+        <nav>
+            <a href="#">Home</a>
+			<a href="#">Menu</a>
+			<a href="#">Contact Us</a>
+        </nav>
+        <div id=box>
+            <h1>Para rara rara graph!</h1>
+            <video id="video" width="700" width="700" controls>
+                <source src="video/MP4_Bunny.mp4" type="video/mp4">
+            </video>
+        </div>
+            <figure id=fig1>
+                <img src="images/logo.png" id="logo" alt="logo" width="250" height="250"/>
+            </figure>
+            
+            <div id="side1">
+                <img src="images/curry.jpg" id="curry" alt="curry" width="340"/>
+                <h2>SPICEY!!!</h2>
+            </div>
+            
+            <div id="side2">
+                <img src="images/spices.jpg" id="spices" alt="spices" width="340"/>
+            </div>
+       
+    </body>
+
+</html>

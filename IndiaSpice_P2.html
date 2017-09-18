@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>index.html </title>
+        <link href="https://fonts.googleapis.com/css?family=Neucha|Rochester|Tangerine" rel="stylesheet">
+            <!--font-family: 'Tangerine', cursive;-->
+            <!--font-family: 'Rochester', cursive;-->
+            <!--font-family: 'Neucha', cursive;-->
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <style type="text/css">
+        #title{
+            display:flex;
+			flex-direction:row;
+			justify-content:center;
+			width:50%;
+			height:65px;
+			padding-left:30px;
+			margin-left:470px;
+			background-color:#ffbb32;
+			font-family: 'Rochester', cursive;
+			font-size:3.5rem;
+			color:#c1272d;
+
+        }
+        nav{
+	        display:flex;
+			flex-direction:row;
+			justify-content:center;
+			width:50%;
+			height:120px;
+			padding-left:30px;
+			margin-left:470px;
+			background-color:#ffbb32;
+			border-bottom-left-radius:90px;
+			border-bottom-right-radius:90px;
+			font-family: 'Tangerine', cursive;
+			font-size:2.4rem;
+			
+			
+		}
+        
+        body{
+            background-image:url("images/background2.jpg");
+            background-size:stretch;
+        }   
+            
+        a{
+            flex:1;
+            margin-top:30px;
+            margin-left:80px;
+            color:#FF000A;
+        }
+        
+        #logo{
+            position: absolute;
+            top:0;
+            z-index:10;
+        }
+        
+        #box{
+            position:absolute;
+            top:280px;
+            right:570px;
+            background-color:black;
+            width:40%;
+            height:630px;
+            font-size:2.4rem;
+            color:white;
+            text-align:center;
+        }
+        #video{
+            z-index=100;
+        }
+        #side1{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            position:absolute;
+            top:0;
+            right:0;
+            background-color:black;
+            width:23%;
+            height:100%;
+        }
+        
+        #side2{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            position:absolute;
+            top:0;
+            left:0;
+            background-color:black;
+            width:23%;
+            height:100%;
+        }
+        .slides{
+            display:flex;
+            flex-direction
+        }
+        #Naan{
+            z-index:100;
+            width:27.6rem;
+            height:25rem;
+        }
+            
+        #Dips{
+            z-index:100;
+            width:27.6rem;
+            height:25rem;
+        }
+          
+            
+        </style>
+    
+    </head>
+    
+    <body>
+		<section id="title"><h1>~Indian Spice~</h1></section>
+        <nav>
+            <a href="#">Home</a>
+			<a href="#">Menu</a>
+			<a href="#">Contact Us</a>
+        </nav>
+
+            <figure id=fig1>
+                <img src="images/logo.png" id="logo" alt="logo" width="250" height="250"/>
+            </figure>
+            
+            <div id="side1">
+                <img src="images/Naan.jpg" id="Naan" alt="Naan" width="340"/>
+            </div>
+            
+            <div id="side2">
+                <img src="images/Dips.jpg" id="Dips" alt="Dips" width="340"/>
+            </div>
+       
+    </body>
+
+</html>

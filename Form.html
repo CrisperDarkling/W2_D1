@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="UTF-8">
+      <title>Form</title>
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+   
+      <!--
+         Form with HTML5 tags and basic CSS
+      -->
+      <style type="text/css">
+
+      body{
+         font-family: 'Roboto', sans-serif;
+      }
+         #container{
+            width: 550px;
+            margin: auto;
+
+         }
+
+         legend{
+            font-size: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+         }
+            
+         label.field{
+            display: block;
+            text-align:right;
+            width: 100px;
+            float: left;
+            clear:both;
+            color:#FF8A00;
+            font-weight:bold;
+         }
+         input{
+            width: 200px;
+            border-radius: 5px;
+            padding: 6px 8px;
+            margin:4px;
+         }
+         #Submit{
+            position:relative;
+            left:120px;
+
+         }
+         .field{
+            padding: 6px 8px;
+         }
+
+         #food{
+             width: 220px;
+             border-radius: 5px;
+             padding: 6px 8px;
+         }
+
+         fieldset{
+            width: 500px;
+            border: 4px solid #DA0CE8;
+            border-radius: 20px;
+            clear: both;
+            padding: 20px;
+            margin-bottom: 100px;
+            background-color:#1669F2;
+
+         }
+         #bands{
+            margin:10px;
+         }
+         
+         :focus{
+      background-color: #FFECE9;
+ }
+      </style>
+   </head>
+   <body>
+      <div id="container">
+         <fieldset>
+            <legend> Registration </legend>
+            <form>
+                  <label class="field" for="Username">*Username</label>
+                  <input class="field" type="text" name="Username" autocomplete="on" required="" autofocus placeholder="Enter your Username here"/>
+               
+                  <label class="field" for="Email">*Email Address</label>
+                  <input class="field" type="email" name="Email" autocomplete="on" required="" placeholder="Enter your email here"/>
+               
+                  <label class="field" for="Password">*Password</label>
+                  <input class="field" type="password" name="Password" autocomplete="on" required="" placeholder="8 characters  minimum"/>
+               
+                  <label class="field" for="Tel">Telephone Number</label>
+                  <input class="field" type="tel" name="Tel" pattern="[0][8][2-9][0-9]{7}" autocomplete="on" required=""/>
+               
+                  <label class="field" for="Website">Website</label>
+                  <input class="field" type="url" autocomplete="on" name="Website"/>
+                 
+                  <label class="field" for="Additional">Additional Details</label>
+                  <textarea placeholder="Enter details" name="Additional" rows="4" cols="30"></textarea><br>
+                  
+                  <label> How loud is too loud?
+                  <input type="range" min="0" max="11"/></label>
+                  <br>
+               
+               <div id="food">
+                  <br>Would you like:<br>
+                  <label for="checkbox1">Pancakes</label>
+                  <input type="checkbox" name="checkbox1"/><br>
+                  <label for="checkbox2">Fish and Chips</label>
+                  <input type="checkbox" name="checkbox2"/><br>
+                  <label for="checkbox3">Lamb Tagliatelle</label>
+                  <input type="checkbox" name="checkbox3"/>
+                  <br>
+               </div>
+            
+               <div id="drinks">
+                  Beverage:<br>
+                  <label>Tea<input type="radio" name="tea" value="Tea"></label><br>
+                  <label>Coffee<input type="radio" name="tea" value="Lemon Tea"></label>
+               </div><br>
+                  
+                  Houses of Westeros
+                  <select id="GoT">
+                     <option value="Stark">Stark</option>
+                     <option value="Lannister">Lannister</option>
+                     <option value="Targaryen">Targaryen</option> 
+                     <option value="Baratheon">Baratheon</option> 
+                  </select><br>
+                  
+               <label>Favourite band<input id="bands" list="bands" name="bands">
+                  <datalist>
+                     <option value="Periphery"></option>
+                     <option value="Animals As Leaders"></option>
+                     <option value="The Contortionist"></option>
+                  </datalist></label>
+                  
+
+                  
+                  <br><input id="Submit" class="field" type="submit" name="Submit Button"/>
+            
+            </form>
+         </fieldset>
+      </div>
+   </body>
+
+</html>
